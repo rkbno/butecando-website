@@ -8,3 +8,31 @@ body {
   box-sizing: border-box;
   max-width: 1480px;
 } 
+
+img {
+  width: 200px;
+  height: 500px ;
+}
+
+.slick-arrow {
+  width: 30px;
+  height: 30px;
+  color: transparent;
+  font-size: 1px;
+  position: absolute;
+  bottom: 0px;
+  right: 48%;
+}
+.slick-prev{
+  right: 52%;
+  background: url("../imagens/seta-direita.png");
+  background-size: 100%;
+  transform: rotate(-180deg);
+  border: none;
+}
+.slick-next{
+  
+  background: url("../imagens/seta-direita.png");
+  background-size: 100%;
+  border: none;
+}
