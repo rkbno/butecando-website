@@ -3,36 +3,57 @@
 }
 
 body {
+  
   margin: 0 auto !important; 
-  padding: 0;
-  box-sizing: border-box;
-  max-width: 1480px;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  max-width: 1480px !important;
 } 
 
-img {
-  width: 200px;
-  height: 500px ;
+#navbar {
+  position: sticky !important;
+  top: 0 !important;
 }
 
-.slick-arrow {
-  width: 30px;
-  height: 30px;
-  color: transparent;
-  font-size: 1px;
+[data-semana]::after{
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+  margin-left: 4px;
+  border: 2px solid #000;
+}
+
+[data-semana].aberto::after{
+  background-color: greenyellow;
+}
+
+.contato {
+  width: 50%;
+  position: relative;
+}
+
+.contato-lista{
   position: absolute;
-  bottom: 0px;
-  right: 48%;
+  top: 25%;
+  left: 100%;
+  width: 300px;
 }
-.slick-prev{
-  right: 52%;
-  background: url("../imagens/seta-direita.png");
-  background-size: 100%;
-  transform: rotate(-180deg);
-  border: none;
-}
-.slick-next{
-  
-  background: url("../imagens/seta-direita.png");
-  background-size: 100%;
-  border: none;
+
+.tooltip {
+  position: absolute;
+  z-index: 500;
+  background: rgba(0,0,0,.6);
+  box-shadow: 0 0 0 2px #fb5, 0 0 0 6px rgba(0,0,0,.6);
+  padding: .5rem;
+  color: white;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+  font-size: .875rem;
+  max-width: 170px;
+  border-radius: 2px;
+  top: 0;
+  left: 0;
 }

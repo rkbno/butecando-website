@@ -5,18 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="src/imagens/favicon.ico" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="src/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
   <title>Butecando</title>
 </head>
 
 <body>
 
-  <header>
-    <nav class="navbar text-bg-dark navbar-dark navbar-expand-md sticky-top">
+  <header class="sticky-top">
+    <nav class="navbar text-bg-dark navbar-dark navbar-expand-md">
       <div class="container">
         <a href="#" class="navbar-brand d-flex align-items-center">
           <img src="src/imagens/Logotipo_Bar_cerveja__3_-removebg-preview.png" alt="logotipo" class="w-25 h-25" />
@@ -25,17 +24,18 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
-        <div class="collapse navbar-collapse" id="menuNavbar">
-          <div class="navbar-nav ms-auto">
-            <a href="#" class="nav-link">Principal</a>
-            <a href="#sobre" class="nav-link">Sobre</a>
-            
-                  <button class="btn btn-outline-danger" data-bs-toggle="offcanvas" data-bs-target="#painel" style="margin-top: 0.6%;">Cardápio</button>
-              
-            <a href="#" class="nav-link">Localização</a>
+          <div class="collapse navbar-collapse" id="menuNavbar">
+            <div class="navbar-nav ms-auto">
+              <a href="#" class="nav-link">Principal</a>
+              <a href="#sobre" class="nav-link">Sobre</a>
+
+              <button class="btn btn-outline-danger" data-bs-toggle="offcanvas" data-bs-target="#painel"
+                style="margin-top: 0.6%;">Cardápio</button>
+
+              <a href="#" class="nav-link">Localização</a>
+            </div>
           </div>
         </div>
-      </div>
     </nav>
   </header>
 
@@ -100,7 +100,7 @@
     </p>
   </div>
 
-  <div >
+  <div>
     <section>
       <div class="offcanvas offcanvas-start" id="painel" tabindex="-1">
         <div class="offcanvas-header">
@@ -110,55 +110,70 @@
         <div class="offcanvas-body">
           <div class="lead mb-5">
             <p class="d-inline">Lanches</p>
-            <img class="img-thumbnail" src="src/imagens/lanche.png" alt="cardápio"
-              width="54px">
+            <img class="img-thumbnail" src="src/imagens/lanche.png" alt="cardápio" width="54px">
           </div>
-    
-    
-          <div class="lead mb-5">
-            <p class="d-inline">Porções</p>
-            <img class="img-thumbnail" src="src/imagens/porções.png" alt="Porções"
-              width="54px">
-          </div>
-    
-          <div class="lead mb-5">
-            <p class="d-inline">Bebidas</p>
-            <img class="img-thumbnail" src="src/imagens/bebidas.png" alt="cardápio"
-              width="54px">
-          </div>
-    
-          
-          <div class="lead mb-5">
-            <p class="d-inline">Cachorro Quente (Só dia de sexta)</p>
-            <img class="img-thumbnail" src="src/imagens/cachorro quente.png"
-            alt="cardápio" width="54px">
-          </div>
-          
-          <div class="lead mb-5">
-            <p class="d-inline">Feijão tropeiro (Só dia de domingo)</p>
-            <img class="img-thumbnail" src="src/imagens/feijao tropeiro.png" alt="Cardápios"
-              width="54px">
+
+          <div id="galeria">
+            <div class="lead mb-5">
+              <p class="d-inline">Porções</p>
+              <img class="img-thumbnail" src="src/imagens/porções.png" alt="Porções" width="54px">
+            </div>
+
+            <div class="lead mb-5">
+              <p class="d-inline">Bebidas</p>
+              <img class="img-thumbnail" src="src/imagens/bebidas.png" alt="cardápio" width="54px">
+            </div>
+
+
+            <div class="lead mb-5">
+              <p class="d-inline">Cachorro Quente (Só dia de sexta)</p>
+              <img class="img-thumbnail" src="src/imagens/cachorro quente.png" alt="cardápio" width="54px">
+            </div>
+
+            <div class="lead mb-5">
+              <p class="d-inline">Feijão tropeiro (Só dia de domingo)</p>
+              <img class="img-thumbnail" src="src/imagens/feijao tropeiro.png" alt="Cardápios" width="54px">
+            </div>
           </div>
         </div>
       </div>
     </section>
   </div>
 
-  
+  <section class="grid-section contato" data-anime="sroll" id="contato">
+    <h1 class=" py-5">
+      <i class="fs-1 titulo" id="sobre">Localização</i>
+    </h1>
+    <div class="mapa" data-tooltip aria-label="Endereço próximo ao supermercado verde amarelo.">
+
+      <img src="src/imagens/WhatsApp Image 2023-10-23 at 14.49.59.jpeg">
+
+    </div>
+    <ul class="contato-lista">
+      <li>contato@gmail.com</li>
+      <li>+55 (21) 9999-9999</li>
+      <li>Rua do Conde, ṇª21</li>
+      <li>Rio de Janeiro - RJ</li>
+      <li data-semana="3,4,5,6,7" data-horario="18,22">Quarta àos Domingos das 18 às 22</li>
+    </ul>
+  </section>
+
+
 
   <footer class="p-5 bg-dark text-light text-center">
     todos os direitos reservados
   </footer>
 
 
-
+  <script src="/src/js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  
-  
-  
+
+
+
+
 </body>
 
 </html>
