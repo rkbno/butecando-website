@@ -35,7 +35,7 @@
             <a href="#" class="nav-link">Principal</a>
             <a href="#sobre" class="nav-link">Sobre</a>
 
-            <button class="btn btn-outline-danger" data-bs-toggle="offcanvas" data-bs-target="#painel"
+            <button class="btn btn-outline-warning" data-bs-toggle="offcanvas" data-bs-target="#painel"
               style="margin-top: 0.6%;">Cardápio</button>
 
             <a href="#localizacao" class="nav-link">Localização</a>
@@ -89,7 +89,7 @@
     <div class="row">
       <div class="col">
         <h1 class="pt-5">
-          <i class="fs-1 sobre" id="sobre">SOBRE</i>
+          <i class="fs-1" id="sobre">SOBRE</i>
         </h1>
       </div>
     </div>
@@ -117,13 +117,17 @@
         <div class="offcanvas-body">
           <div class="lead mb-5">
             <p class="d-inline">Lanches</p>
-            <img class="img-thumbnail" src="src/imagens/lanche.png" alt="cardápio">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Modal">
+              <img class="img-thumbnail" src="src/imagens/lanche.png" alt="cardápio">
+            </button>
           </div>
 
           <div id="galeria">
             <div class="lead mb-5">
               <p class="d-inline">Porções</p>
-              <img class="img-thumbnail" src="src/imagens/porções.png" alt="Porções">
+              <button type="button" class="btn" data-bs-toggle="modaL" data-bs-target="#Modal2">
+                <img class="img-thumbnail" src="src/imagens/porções.png" alt="Porções">
+              </button>
             </div>
 
             <div class="lead mb-5">
@@ -160,7 +164,7 @@
       <div class="row">
         <div class="col">
           <h1 class=" py-5">
-            <i class="fs-1">Localização</i>
+            <i class="fs-1" id="localizacao">LOCALIZALÇÃO</i>
           </h1>
         </div>
       </div>
@@ -172,7 +176,7 @@
           </a>
         </div>
         <div class="col-6">
-          <ul class="localização-lista mb-3" id="localizacao">
+          <ul class="localização-lista mb-3">
             <li>
               <a href="mailto:brenotm10@gmail.com" target="black">
                 Brenotm10@gmail.com
@@ -203,6 +207,43 @@
       </footer>
     </div>
   </div>
+ 
+  
+  <!-- Modal -->
+  <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">LANCHES</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="src/imagens/lanche.png" alt="lanches"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal">PORÇÕES</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="src/imagens/porções.png" alt="lanches"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+ 
+
+
 
 
   <script src="/src/js/script.js"></script>
