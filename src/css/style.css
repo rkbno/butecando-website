@@ -1,4 +1,4 @@
-* img {
+/* * img {
   width: 100%;
 }
 
@@ -13,33 +13,6 @@ body {
 #navbar {
   position: sticky !important;
   top: 0 !important;
-}
-
-[data-semana]::after{
-  display: inline-block;
-  content: '';
-  width: 10px;
-  height: 10px;
-  background: red;
-  border-radius: 50%;
-  margin-left: 4px;
-  border: 2px solid #000;
-}
-
-[data-semana].aberto::after{
-  background-color: greenyellow;
-}
-
-.contato {
-  width: 50%;
-  position: relative;
-}
-
-.contato-lista{
-  position: absolute;
-  top: 25%;
-  left: 100%;
-  width: 300px;
 }
 
 .tooltip {
@@ -57,3 +30,32 @@ body {
   top: 0;
   left: 0;
 }
+
+
+
+
+[data-semana]::after{
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+  margin-left: 4px;
+  border: 2px solid #000;
+}
+
+[data-semana].aberto::after{
+  background-color: greenyellow;
+}
+
+.nav-link {
+  transform: 1000s ease-in-out;
+}
+
+ul {
+  list-style: none;
+}
+
+
+ */
