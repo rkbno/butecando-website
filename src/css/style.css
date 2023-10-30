@@ -59,6 +59,8 @@ ul {
 
 
 
-
+navbar-toggler:target {
+  display: none !important;
+}
 
 
